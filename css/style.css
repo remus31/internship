@@ -1,0 +1,36 @@
+.container{
+    width: 320px;
+    height: 420px;
+    background-color: rgb(31, 155, 226);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+}
+
+ h1 {
+     margin: 0;
+     padding: 0 0 20px;
+     text-align: center;
+     font-size: 25px;
+ }
+ 
+ form{
+     text-align: center;
+     padding: 10px;
+     margin: 5%;
+ }
+
+ input  {
+     width: 100%;
+     margin-bottom: 5%;
+ }
+
+ input.btn-login{
+     width: 50%;
+     float: right;
+ }
+
+ 
