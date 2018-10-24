@@ -1,5 +1,6 @@
 <?php require "common.php";
- ?>
+      require "xss.php";
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -107,11 +108,11 @@
         }
         ?>
         <br><br>
-        <input type="text" name="name" value="<?php echo $name; ?>" placeholder="Name..."/>
+        <input type="text" name="name" value="<?php echo e_xss($name); ?>" placeholder="Name..."/>
         <br>
-        <textarea rows="4" cols="50" name="details" value="<?php echo $details; ?>">Contact details...</textarea>
+        <textarea rows="4" cols="50" name="details" value="<?php echo e_xss($details); ?>">Contact details...</textarea>
         <br>
-        <textarea rows="4" cols="50" name="comments" value="<?php echo $comments; ?>">Comments...</textarea>
+        <textarea rows="4" cols="50" name="comments" value="<?php echo e_xss($comments); ?>">Comments...</textarea>
         <br>
         <input type="submit" name="submit" value="Checkout" class="btn-login"/>
     </form>
